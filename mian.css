@@ -1,0 +1,119 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    background-image: url(pexels-photo-4869288.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+}
+header img{
+    width: 50px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+}
+header .main-nav{
+    float: right;
+}
+.main-nav li{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.main-nav li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.main-nav li a:hover{
+    opacity: 0.5;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 275px;
+    font-size: 60px;
+    margin-left: -700px;
+}
+.main-nav .current a{
+    color: orange;
+}
+.coffee{
+    color:orange;
+}
+p{
+    color: white;
+    margin-top: 300px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(138, 105, 44);
+    height: 50px;
+    padding-top: 15px;
+}
+#tea{
+    display:none;
+    flex-direction: column;
+}
+#tea.active{
+    display: flex;
+    flex-direction: column;
+}
+header #first-img{
+    float: left;
+    width: 50px;
+    padding: 15px 15px;
+}
+@media (max-width:500px){
+    body{
+        background-color: black;
+    }
+    
+    header img{
+        float: right;
+        width: 60px;
+        margin: 0px;
+        padding: 20px 15px;
+    }
+    header .main-nav{
+        float: left;
+        margin-top: 0px;
+        padding: 20px;
+        font-size: 12px;
+    }
+    header .main-nav li{
+        padding: 5px 0px;
+        display: block;
+        height: 30px;
+        text-align: center;
+        opacity: 0.4;
+        color:white;
+}
+header .main-nav li a{
+    color: rgb(255, 255, 255);
+}
+.main-nav a:hover{
+    color: white;
+}
+#first-img.display{
+    display: block;
+}
+header h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    line-height: 1.4;
+}
+.main-nav #tea{
+    display: none;
+}
+header .coffee{
+    margin-right: 20px;
+}
+
+}
